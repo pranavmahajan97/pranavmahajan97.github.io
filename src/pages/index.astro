@@ -1,49 +1,172 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+const name = "Pranav Mahajan";
+const tagline = "Technology, travel, and thoughtful living.";
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{name}</title>
+    <meta name="description" content={tagline} />
+
+    <style>
+      :root {
+        --bg: #0b0c10;
+        --panel: rgba(255, 255, 255, 0.04);
+        --border: rgba(255, 255, 255, 0.08);
+        --text: #eaeaf0;
+        --muted: #a0a0b8;
+        --accent: #7dd3fc;
+        --glow: rgba(125, 211, 252, 0.35);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background:
+          radial-gradient(800px 400px at 70% -10%, rgba(125,211,252,0.08), transparent),
+          radial-gradient(600px 300px at 10% 20%, rgba(168,85,247,0.06), transparent),
+          var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+      }
+
+      main {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 120px 24px 80px;
+      }
+
+      header {
+        margin-bottom: 80px;
+      }
+
+      h1 {
+        font-size: clamp(2.8rem, 5vw, 4rem);
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        margin: 0 0 12px;
+      }
+
+      .tagline {
+        font-size: 1.25rem;
+        color: var(--muted);
+        max-width: 560px;
+      }
+
+      section {
+        margin-top: 56px;
+        padding: 32px;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+      }
+
+      section h2 {
+        margin: 0 0 16px;
+        font-size: 1.2rem;
+        color: var(--accent);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin: 0.5rem 0;
+        color: var(--text);
+      }
+
+      ul {
+        margin: 16px 0 0;
+        padding-left: 18px;
+      }
+
+      li {
+        margin: 8px 0;
+        color: var(--muted);
+      }
+
+      nav {
+        display: flex;
+        gap: 16px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+      }
+
+      a {
+        padding: 10px 16px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        color: var(--text);
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: all 0.25s ease;
+        background: rgba(255,255,255,0.02);
+      }
+
+      a:hover {
+        border-color: var(--accent);
+        box-shadow: 0 0 24px var(--glow);
+        transform: translateY(-1px);
+      }
+
+      footer {
+        margin-top: 96px;
+        font-size: 0.9rem;
+        color: var(--muted);
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>{name}</h1>
+        <p class="tagline">
+          Technology, travel, discipline, and building a quieter, sharper life.
+        </p>
+
+        <nav>
+          <a href="/blog">Read the blog</a>
+          <a href="/about">About</a>
+          <a href="/now">Now</a>
+          <a href="https://github.com/pranavmahajan97" target="_blank">GitHub</a>
+        </nav>
+      </header>
+
+      <section>
+        <h2>What this is</h2>
+        <p>
+          This is my personal space on the internet. A place to think in public,
+          write without pressure, and document lessons as they unfold.
+        </p>
+        <p>
+          No algorithms. No hustle theatre. Just systems, experiences, and
+          long-term alignment.
+        </p>
+      </section>
+
+      <section>
+        <h2>Focus areas</h2>
+        <ul>
+          <li>Large-scale technology and real-world systems</li>
+          <li>Travel, movement, and perspective</li>
+          <li>Discipline, fitness, and consistency</li>
+          <li>Ambition without burnout</li>
+        </ul>
+      </section>
+
+      <footer>
+        Bangalore · Writing since 2026
+      </footer>
+    </main>
+  </body>
 </html>
