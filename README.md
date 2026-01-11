@@ -1,6 +1,7 @@
 # Pranav Mahajan
 
-This is my personal space on the internet.
+This is my personal space on the internet. Figuring out some projects to showcase.
+
 
 A slow-built website where I write about technology, travel, discipline, and the quieter work of figuring things out. It’s intentionally minimal, occasionally updated, and not optimized for anything except clarity.
 
