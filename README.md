@@ -1,66 +1,49 @@
-# Astro Starter Kit: Blog
+# Pranav Mahajan
 
-```sh
-npm create astro@latest -- --template blog
-```
+This is my personal space on the internet.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+A slow-built website where I write about technology, travel, discipline, and the quieter work of figuring things out. It’s intentionally minimal, occasionally updated, and not optimized for anything except clarity.
 
-Features:
+The site is built as a static project and hosted via GitHub Pages.
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+Live here → https://pranavmahajan97.github.io
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## What lives here
 
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+- Long-form thoughts on technology and systems  
+- Reflections from travel and time away from structure  
+- Notes on discipline, fitness, and consistency  
+- Essays written without urgency or algorithms in mind  
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+This is not a blog in the traditional sense.  
+It’s closer to a personal archive.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+---
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+## Philosophy
 
-Any static assets, like images, can be placed in the `public/` directory.
+- Write when there’s something worth saying  
+- Prefer depth over frequency  
+- Build things that age well  
+- Avoid noise, metrics, and performative output  
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## Built with
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- Astro  
+- Plain HTML & CSS  
+- Markdown for writing  
+- GitHub Pages for hosting  
 
-## 👀 Want to learn more?
+No tracking, no ads, no pop-ups.
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
 
-## Credit
+## Status
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+This site is a living project.  
+Updated slowly. On purpose.
 
-# pranavmahajan97.github.io
-
-Starting this personal website project
